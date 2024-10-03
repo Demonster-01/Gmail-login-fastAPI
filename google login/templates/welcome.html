@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',path='/css/style.css')}}">
+</head>
+<body>
+<!--<h1>Welcome to home page</h1>-->
+<div class="container">
+    <div class="header">
+        <h4>welcome {{user['family_name']}}</h4>
+        <div class="img-box">
+            <img class="img" src="{{user['picture]}}"/>
+
+        </div>
+    </div>
+    <a href="/logout" class="google-btn">
+        <div class="google-icon"></div>
+        <span class="btn-text">Logout</span>
+    </a>
+</div>
+</body>
+</html>
